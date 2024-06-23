@@ -35,9 +35,23 @@ A mine has:
     - A column (1-indexed)
 """
 class Mine:
+    # Initializer
     def __init__(self, row, column):
-        self.row = row
-        self.column = column
+        self.__row = row
+        self.__column = column
+
+    # Getters and Setters
+    def get_row(self):
+        return self.__row
+    
+    def set_row(self, row):
+        self.__row = row
+
+    def get_column(self):
+        return self.__column
+    
+    def set_column(self, column):
+        self.__column = column
 
 
 """ 
