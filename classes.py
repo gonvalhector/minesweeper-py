@@ -44,6 +44,18 @@ class Board:
         self.grid = []
         self.mines = []
 
+    # Creates a grid of empty squares
+    def set_grid(self):
+        # Create row
+        for i in range(self.height):
+            row = []
+            # Fill row with empty squares
+            for j in range(self.width):
+                row.append("-")
+            # Add row to grid
+            self.grid.append(row)
+    
+
     def place_mines(self):
         for i in range(self.height):
         columns = []
