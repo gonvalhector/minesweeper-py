@@ -67,11 +67,37 @@ A board has:
    - Place its mines
 """
 class Board:
+    # Initializer
     def __init__(self, width, height):
-        self.width = width
-        self.height = height
-        self.grid = []
-        self.mines = []
+        self.__width = width
+        self.__height = height
+        self.__grid = []
+        self.__mines = []
+
+    # Getters and Setters
+    def get_width(self):
+        return self.__width
+    
+    def set_width(self, width):
+        self.__width(width)
+
+    def get_height(self):
+        return self.__height
+    
+    def set_height(self, height):
+        self.__height = height
+
+    def get_grid(self):
+        return self.__grid
+    
+    def set_grid(self, grid):
+        self.__grid = grid
+
+    def get_mines(self):
+        return self.__mines
+    
+    def set_mines(self, mines):
+        self.__mines = mines
 
     # Creates a grid of empty squares
     def set_grid(self):
@@ -86,8 +112,4 @@ class Board:
     
 
     def place_mines(self):
-        for i in range(self.height):
-        columns = []
-            for j in range(self.width):
-                column = ""
-        return
+        pass
