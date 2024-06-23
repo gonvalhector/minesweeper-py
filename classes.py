@@ -6,12 +6,27 @@ A game can:
     - Print its state
 """
 class Game:
-    def __init__(self, state, board):
-        self.state = state
-        self.board = board
+    # Initializer
+    def __init__(self, board, state=""):
+        self.__state = state
+        self.__board = board
 
+    # Getters and Setters
+    def get_state(self):
+        return self.__state
+    
+    def set_state(self, state):
+        self.__state = state
+
+    def get_board(self):
+        return self.__board
+    
+    def set_board(self, board):
+        self.__board = board
+
+    # Prints the game's state
     def print_state(self):
-        print(self.state)
+        print(self.get_state())
 
 
 """
