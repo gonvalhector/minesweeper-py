@@ -1,11 +1,12 @@
-""" 
-A game has:
-    - A state
-    - A board
-A game can:
-    - Print its state
-"""
 class Game:
+    """ 
+    A game has:
+        - A state
+        - A board
+    A game can:
+        - Print its state
+    """
+
     # Initializer
     def __init__(self, board, state=""):
         self.__state = state
@@ -29,12 +30,13 @@ class Game:
         print(self.get_state())
 
 
-"""
-A mine has:
-    - A row (1-indexed)
-    - A column (1-indexed)
-"""
 class Mine:
+    """
+    A mine has:
+        - A row (1-indexed)
+        - A column (1-indexed)
+    """
+    
     # Initializer
     def __init__(self, row, column):
         self.__row = row
@@ -54,19 +56,20 @@ class Mine:
         self.__column = column
 
 
-""" 
-A board has:
-    - A width
-    - A height
-    - A grid(list of lists) of rows(lists) with:
-        - Squares(elements) that are:
-            - Empty
-            - Mines
-    - Mines
- A board can:
-   - Place its mines
-"""
 class Board:
+    """ 
+    A board has:
+        - A width
+        - A height
+        - A grid(list of lists) of rows(lists) with:
+            - Squares(elements) that are:
+                - Empty
+                - Mines
+        - Mines
+    A board can:
+    - Place its mines
+    """
+
     # Initializer
     def __init__(self, width, height):
         self.__width = width
