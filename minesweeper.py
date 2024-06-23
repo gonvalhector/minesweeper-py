@@ -13,6 +13,18 @@ class Game:
     def print_state(self):
         print(self.state)
 
+
+"""
+A mine has:
+    - A row (1-indexed)
+    - A column (1-indexed)
+"""
+class Mine:
+    def __init__(self, row, column):
+        self.row = row
+        self.column = column
+
+
 """ 
 A board has:
     - A width
@@ -33,21 +45,17 @@ class Board:
         self.mines = []
 
     def place_mines(self):
+        for i in range(self.height):
+        columns = []
+            for j in range(self.width):
+                column = ""
         return
-
 
 
 def main():
     width = 4
     height = 4
     board = Board(width, height)
-
-    for i in range(height):
-        columns = []
-        for j in range(width):
-            column = ""
-
-    
     return
 
 
